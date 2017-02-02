@@ -12,16 +12,14 @@ include  'ClassTest.php';
 
 
 $userNew=new ClassTest;
-
-echo $userNew->setName("Radek");
-
-function opObject(ClassTest $object): ClassTest{
-    $object->setAge(12);
+$userNew->setName("Radek");
+function setObject(ClassTest $object): ClassTest{
     $object->setLikeIt(false);
     $object->setInWollet(12.56);
+    
     return $object;
 }
 
-$aaa=opObject($userNew);
+$aaa=setObject($userNew);
 
 var_dump($aaa);

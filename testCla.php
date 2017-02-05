@@ -10,12 +10,18 @@
 
 include  'ClassTest.php';
 
+$username = $userNew?? 'nobody';
+echo '<pre>' .var_dump ($username) . '</pre>';
 
 $userNew=new ClassTest;
 $userNew->setName("Radek");
+
+$username = $userNew ?? 'nobody';
+echo '<pre>' . var_dump ($username) . '</pre>';
+
 function setObject(ClassTest $object): ClassTest{
     $object->setLikeIt(false);
-    $object->setInWollet(12.56);
+    $object->setInWallet(12.56);
     
     return $object;
 }

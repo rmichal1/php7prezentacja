@@ -47,10 +47,10 @@ class ClassTest {
     public function getLikeIt(): bool{
         return $this->likeIt;
     }
-    public function setInWollet(float $param){
+    public function setInWallet(float $param){
         $this->cashInYourWallet=$param;
     }
-    public function getInWollet():float{
+    public function getInWallet():float{
         return $this->cashInYourWallet;
     }
 }

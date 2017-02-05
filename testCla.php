@@ -9,7 +9,7 @@
 //declare(strict_types=1);
 
 include  'ClassTest.php';
-
+/*
 $username = $userNew?? 'nobody';
 echo '<pre>' .var_dump ($username) . '</pre>';
 
@@ -18,6 +18,9 @@ $userNew->setName("Radek");
 
 $username = $userNew ?? 'nobody';
 echo '<pre>' . var_dump ($username) . '</pre>';
+*/
+$userNew=new ClassTest;
+$userNew->setName("Radek");
 
 function setObject(ClassTest $object): ClassTest{
     $object->setLikeIt(false);

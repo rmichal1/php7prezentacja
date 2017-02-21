@@ -28,4 +28,4 @@ $app->setLogger(new class implements Logger {
     }
 });
 
-var_dump($app->getLogger());
+var_dump($app->getLogger()->log("asdfafsfas"));
